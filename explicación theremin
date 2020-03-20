@@ -1,0 +1,23 @@
+Este proyecto se trata de un theremin, un instrumento musical que se controla sin necesidad de contacto físico. 
+En este caso se trata de un theremin que vamos a utilizar para improvisar melodias fáciles, usando escalas. 
+Puedes editar las escalas y escoger cualquiera para hacerla sonar en tu Theremin. Puedes también cambiar las notas, subir o bajar octavas. 
+
+Para ello utilizamos: 
+- Arduino UNO
+- Buzzer
+- Sensor de distancia HC-SR04
+- Cables macho-macho
+
+
+El theremin o eterófono es un instrumento muy peculiar. Se basa en el hecho físico de que un cuerpo dentro de un campo electromagnético 
+producido por un modulación de radiofrecuencia, produce cambios de frecuencia en dicho campo. El theremin usa dos circuitos con dos antenas: 
+uno de volumen y otro de tono. Construir un theremin no es sencillo, pero usando un Arduino y un sensor de ultrasonidos podemos crear algo 
+mucho más básico.
+
+El funcionamiento es muy sencillo. Con el sensor de ultrasonidos se hace una medida de distancia. 
+Esto es, se emite un pulso usando la señal trigger y se recoge a través de la patilla echo. 
+El tiempo que tarda en reconocerse el pulso de vuelta al rebotar en el obstáculo nos indica la distancia. 
+
+Pones la mano a una cierta distancia del sensor, se calcula la frecuencia del tono como función sinusoidal 
+de dicha distancia y se emite el tono a través del buzzer.
+
